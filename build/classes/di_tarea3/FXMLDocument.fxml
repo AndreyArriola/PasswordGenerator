@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="389.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="di_tarea3.FXMLDocumentController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="472.0" prefWidth="291.0">
+         <children>
+             <fx:include fx:id="data" source="../ComponenteGrafico/Datos.fxml" />
+            <Button fx:id="btContraseña" layoutX="79.0" layoutY="266.0" mnemonicParsing="false" onAction="#GenerarContraseña" prefHeight="25.0" prefWidth="127.0" text="Generar Contraseña" />
+            <Button fx:id="btNuevosDatos" layoutX="79.0" layoutY="308.0" mnemonicParsing="false" onAction="#limpiar" prefHeight="25.0" prefWidth="127.0" text="Nuevos datos" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="482.0" prefWidth="284.0">
+         <children>
+            <Button fx:id="btSalir" layoutX="62.0" layoutY="137.0" mnemonicParsing="false" onAction="#salir" prefHeight="33.0" prefWidth="127.0" text="Salir" />
+            <Label layoutX="31.0" layoutY="35.0" prefHeight="25.0" prefWidth="139.0" text="Contraseña generada">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtContraseña" editable="false" layoutX="31.0" layoutY="67.0" prefHeight="33.0" prefWidth="188.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
